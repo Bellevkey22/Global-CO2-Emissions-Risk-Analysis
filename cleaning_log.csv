@@ -1,0 +1,5 @@
+Issue,Action Taken,Rows Affected,Reason
+Data before1990,Filtered to year >= 1990,43174,Pre-1990 data too sparse for modern analysis
+Regional aggregates (no iso_code),Kept only rows with iso_code,8456,Regional totals would double-count emissions
+Missing co2 values,Dropped448 rows,448,co2 is north star metric — unusable without it
+Missing fuel source values,Filled with0,1804,Missing fuel data likely reflects zero usage
